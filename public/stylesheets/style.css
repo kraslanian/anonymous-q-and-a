@@ -1,66 +1,98 @@
 body {
-	font-family: sans-serif;
-    background: #E0E0E1;
+	font-family: 'Times New Roman', Times, serif;
+	background: #cacae3;
 	text-align: center;
-}
-
-#content {
-	width: 500px;
+  }
+  
+  #content {
+	width: 80%;
 	margin: auto;
-	text-align: left;
-}
-
-header {
 	text-align: center;
-}
-
-#btn-show-modal-question {
-	width: 100%;
-	padding: 0.75em;
-	font-size: 1.5em;
-}
-
-input[type="text"], .modal-content > input[type="button"] {
-	font-size: 1.25em;
-	padding: 0.5em;
-}
-
-input[type="button"] {
-	padding: 0.75em;
+  }
+  
+  header {
+	text-align: center;
+  }
+  
+  #btn-show-modal-question {
+	width: 50%;
+	margin: auto;
+	padding: 1em;
+	font-size: 1em;
+  }
+  
+  input[type="text"] {
+	font-size: 1.3em;
+	padding: 1.5em;
+	border-radius: 8px;
+	margin-bottom: 20px;
+  }
+  
+  .modal {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	z-index: 1;
+  }
+  
+  .modal-content {
+	margin: auto;
+  }
+  
+  .modal-content > input[type="button"] {
+	font-size: 1em;
+	padding: 1em;
+	border-radius: 10px;
+	margin-bottom: 20px;
+  }
+  
+  input[type="button"] {
+	padding: 1em;
 	border: none;
 	background-color: #000;
 	color: white;
-}
-
-article {
+	cursor: pointer;
+  }
+  
+  #content article {
 	margin-bottom: 2em;
-}
-
-article > h3 {
-	border-bottom: 1px dashed black;
-	padding: 0.25em;
-}
-.modal {
-	/* TODO: comment display: none out if using showModal */
-	display: none;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	width: 100%;
-	height: 100%;
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-.modal.open {
-	display: block;
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 25% auto; /* 15% from the top and centered */
-    padding: 20px;
-	vertical-align: center;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
+  }
+  
+  .question-container {
+	width: 50%;
+	margin: 20px auto;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	background-color: #fefefe;
+  }
+  
+  .question {
+	color: #000000;
+	font-size: 25px;
+	border-bottom: 1px dashed #333;
+	padding-bottom: 5px;
+  }
+  
+  .answer {
+	color: #333;
+	font-size: 20px;
+  }
+  
+  .submit-button {
+	font-size: 15px;
+	padding: 20px 40px;
+	margin-top: 15px;
+	border: none;
+	background-color: hsl(227, 44%, 66%);
+	color: white;
+	cursor: pointer;
+	border-radius: 8px;
+  }
+  
+  .submit-button:hover {
+	background-color: #422253;
+  }
+  
